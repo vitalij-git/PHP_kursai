@@ -1,0 +1,33 @@
+.welcome{
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(165, 157, 42);
+    background-image: url(background.jpg);
+    background-size: cover;
+   font-size: 50px;
+}
+.main-div{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.block-1{
+    width: 30%;
+}
+.block-2{
+    width: 40%;
+    display: block;
+    text-align: center;
+}
+.block-3{
+    width: 30%;
+}
+.image{
+    width: 80%;
+    margin: 5px;
+}
+p{
+   text-align: justify;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
