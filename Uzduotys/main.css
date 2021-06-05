@@ -1,7 +1,19 @@
-@media screen and (max-width: 720px) {
-    [class*="col-"] {
-      width: 100%;
+@media screen and (max-width: 1024px) {
+    .main-block {
       flex-direction: column;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 720px) {
+    .lorem-ipsum{
+        font-size: 32px !important;
+    }
+}
+@media screen and (max-width: 470px) {
+    .lorem-ipsum{
+        font-size: 24px !important;
     }
 }
 .col-33{
@@ -58,7 +70,6 @@ body{
 .lorem-ipsum{
     color:yellow ;
   font-size: 48px;
-  width: 50%;
   text-align: center;
 }
 .list{
