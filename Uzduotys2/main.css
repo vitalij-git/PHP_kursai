@@ -1,0 +1,42 @@
+.body{
+    max-width: 80%;
+    margin: auto;
+}
+.main-div{
+    display: flex;
+}
+.small-block{
+    width: 8.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.img-block{
+    width: 15px;
+    height: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.larger-block{
+    width: 16.66%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.big-block{
+    width: 49.98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.biggest-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+}
