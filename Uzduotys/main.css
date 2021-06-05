@@ -24,8 +24,8 @@
     width: 33%;
 }
 .image{
-    width: 80%;
     margin: 5px;
+    margin-top: 80px;
 }
 p{
    text-align: justify;
