@@ -19,7 +19,6 @@
 .col-33{
     width: 33%;
 }
-
 .col-70{
     width: 70%;
 }
@@ -32,7 +31,6 @@
 .col-100{
     width: 100%;
 }
-
 .main-block{
     display:flex;
 }

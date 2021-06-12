@@ -1,0 +1,149 @@
+body{
+    max-width:1909px;
+    max-height: 1065px;
+    background: #657AD3 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+}
+.left-container{
+    margin-top: 320px;
+    margin-left: 560px;
+    margin-bottom: 313px;
+    width: 320px;
+    height: 424px;
+    background: red ;
+    opacity: 1;
+}
+.sign-up-block{
+    width: 100%;
+    height: 37px;
+    padding-top: 32px;
+    padding-left: 40px;
+}
+.sign-up-block h1{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 32px/37px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal normal 32px/37px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1; 
+    margin: 0px;
+}
+.text-block{
+    padding-left: 40px;
+    padding-top: 311px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/19px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font: normal normal normal 16px/19px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.text-decoration{
+    text-decoration: underline;
+}
+.right-container{
+    width: 480px;
+    height: 484px;
+    margin-top: 298px;
+    margin-bottom: 283px;
+    margin-right: 549px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.x-block{
+    padding-left: 442.5px;
+    padding-top: 13.51px;
+    padding-right: 22.5px;
+    width: 15px;
+    height: 35px;
+}
+.x-block h2{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 30px/35px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 30px/35px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 0px;
+}
+.form-block{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.form-text{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/15px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 13px/15px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-family: Gill Sans MT;
+    font-size: 13px;
+}
+.form-placeholder{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/21px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #A9A9A9;
+    opacity: 1;
+    font-family: Gill Sans MT;
+    font-size: 18px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 360px;
+    height: 28px;
+    border: none;
+}
+.button-block{
+    width: 166px;
+    height: 40px;
+    background: #FFC0CB;
+    border: none;
+    border-radius: 18px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/21px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    text-align: center;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.form-block-or{
+    margin-left: 10px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/21px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.form-block-sign-in{
+    margin-left: 20px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/21px Gill Sans MT;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 18px/21px Gill Sans MT;
+    letter-spacing: 0px;
+    color: #00008B;
+    opacity: 1;
+    text-decoration: underline;
+}
+.form-border{
+    width: 360px;
+    height: 1px;
+    background: #808080 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
