@@ -55,14 +55,14 @@ h1{
 }
 h2{
     font-family: 'Big Shoulders Stencil Display', cursive;
-font-family: 'Mate SC', serif;
-font-family: 'Roboto Mono', monospace;
-font-size: 2rem;
+    font-family: 'Mate SC', serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
 }
 p{
     font-family: 'Mate SC', serif;
-font-family: 'Roboto Mono', monospace;
-font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
 }
 .nav-bar{
     display: flex;
@@ -73,8 +73,15 @@ font-size: 1.5rem;
     margin: 10px;
     color: crimson;
 }
+.nav-bar-links{
+    display: flex;
+}
 form {
     margin-right: 20px;
+}
+.google-search-form{
+    display: flex;
+    flex-flow: row wrap;
 }
 footer{
     text-align: center;

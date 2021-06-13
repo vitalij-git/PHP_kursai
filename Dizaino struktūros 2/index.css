@@ -147,3 +147,8 @@ body{
     background: #808080 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+button{
+    padding: 0;
+    border: none;
+    background: none;
+    }
