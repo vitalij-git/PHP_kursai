@@ -151,4 +151,40 @@ button{
     padding: 0;
     border: none;
     background: none;
+}
+@media screen and (min-width:1400px) and (max-width: 1900px){
+    .left-xxl-container{
+    margin-top: 200px;
+    margin-left: 20%;
+    margin-bottom: 213px;
     }
+    .right-xxl-container{
+        margin-top: 158px;
+        margin-right: 20%;
+        margin-bottom: 163px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1399px){
+    .left-xxl-container{
+    margin-top: 200px;
+    margin-left: 10%;
+    margin-bottom: 203px;
+    }
+    .right-xxl-container{
+        margin-top: 158px;
+        margin-right: 10%;
+        margin-bottom: 153px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px){
+    .left-xxl-container{
+    margin-top: 200px;
+    margin-left: 2%;
+    margin-bottom: 173px;
+    }
+    .right-xxl-container{
+        margin-top: 158px;
+        margin-right: 2%;
+        margin-bottom: 123px;
+    }
+}
