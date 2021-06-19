@@ -1,6 +1,6 @@
 body{
-    max-width:1909px;
-    max-height: 1065px;
+    max-width:1920px;
+    max-height: auto;
     background: #657AD3 0% 0% no-repeat padding-box;
     opacity: 1;
     display: flex;
@@ -11,7 +11,7 @@ body{
     margin-bottom: 313px;
     width: 320px;
     height: 424px;
-    background: red ;
+    background: url(https://static6.depositphotos.com/1003229/609/v/600/depositphotos_6096843-stock-illustration-circuit-board-vector-background.jpg);
     opacity: 1;
 }
 .sign-up-block{
@@ -74,8 +74,9 @@ body{
     margin: 0px;
 }
 .form-block{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    padding-top: 2.875rem;
 }
 .form-text{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/15px Gill Sans MT;
@@ -88,7 +89,7 @@ body{
     font-family: Gill Sans MT;
     font-size: 13px;
 }
-.form-placeholder{
+.form-input{
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/21px Gill Sans MT;
     letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
@@ -151,6 +152,51 @@ button{
     padding: 0;
     border: none;
     background: none;
+}
+input{
+    display: block;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #808080 !important;
+    padding-bottom: 0.3333rem;
+    padding-left: 0;
+}
+input:focus {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+::-webkit-input-placeholder {
+    font: normal normal normal 1rem/1.1667rem Gill Sans MT;
+    color: #A9A9A9;
+
+}
+.close:hover {
+    cursor: pointer;
+    color:#808080;
+}
+.close {
+    font: normal normal normal 1.6667rem/1.9444rem Gill Sans MT;
+    color:#000000;
+    position: absolute;
+    top: 19.5rem;
+    right: 35.75rem;
+}
+
+label{
+    padding-bottom: 0.6667rem;
+    display: block;
+}
+.right-column-action input, .right-column-action p, .right-column-action a {
+    display:inline-block;
+}
+.right-column-action p {
+    padding-left: 0.7778rem;
+    margin: 0;
+    font: normal normal normal 1rem/1.1667rem Gill Sans MT;
+}
+.input{
+    margin-bottom: 1.8889rem;
 }
 @media screen and (min-width:1400px) and (max-width: 1900px){
     .left-xxl-container{
