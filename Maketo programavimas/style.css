@@ -126,6 +126,7 @@ button{
     font-weight: bold;
     color: black;
     font-size: 1.6875rem;
+    margin: 0;
 }
 .grid-item-3 a{
     font-family: 'Noto Sans', sans-serif;
