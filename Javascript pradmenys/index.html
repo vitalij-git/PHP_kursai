@@ -9,6 +9,9 @@
        .skaiciotuvo-rezultatas{
            width: 40%;
        }
+       input{
+           margin:10px;
+       }
    </style>
 </head>
 <body>
@@ -25,8 +28,13 @@
         <button id="palyginimas3">palyginimas x,y ir z</button>
         <button id="trikampis">patikrinti ar toks trikapims egzistoja pagal 3 krastines(x,y,z)</button>
     </div>
-    <div >
+    <div>
         <input type="text" class="skaiciotuvo-rezultatas" name="skaiciotuvo-rezultatas" disabled="true">
+    </div>
+    <div>
+            <input type="text" name="masyvas" id="masyvas">
+            <button class="masyvo-mygtukas">prideti</button>
+            <input type="text" disabled="true" id="masyvo-rezultatas" name="masyvo-rezultatas">
     </div>
 </body>
 <script src="script.js"></script>

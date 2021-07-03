@@ -153,7 +153,6 @@ document.querySelector("#trikampis").addEventListener("click", function () {
         calculatorResult.value = "toks trikampis ne ezgistoja";
     }
 });
-console.log();
 
 // Javascript "Ciklai"
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -193,7 +192,7 @@ console.log("lyginiai skaiciai kurie dalinasi is 3: " + division3);
 // Pasitikrinkite. Kai m = 11, turėtumėte gauti d = 5.
 
 var m,d;
-m=11;
+m=15;
 d=0;
 var n=1;
 var saldainiuSyvalgyta=0;
@@ -203,3 +202,25 @@ while(saldainiuSyvalgyta<=m){
     n++;
 }
 console.log(d);
+
+//Javascript "Masyvai"
+var masyvai,masyvoIsvedimas;
+masyvoIsvedimas= document.querySelector("#masyvo-rezultatas");
+var massive = [];
+document.querySelector(".masyvo-mygtukas").addEventListener("click", function () {
+    masyvai = document.querySelector("#masyvas").value;
+    massive.push(masyvai);
+    document.querySelector("#masyvas").value = "";
+   masyvoIsvedimas.value = massive;
+});
+
+var nsk = 8421;
+var liekana;
+var nskMasyvas=[];
+while(nsk !=0 ){
+    liekana = nsk % 10;
+    nskMasyvas.push(liekana);
+    nsk = parseInt(nsk / 10);
+}
+console.log(nskMasyvas);
+
