@@ -121,27 +121,27 @@ document.querySelector("#trikampis").addEventListener("click", function () {
     x = parseInt(document.querySelector("#x").value);
     y = parseInt(document.querySelector("#y").value);
     z = parseInt(document.querySelector("#z").value);
-    var xs = Math.pow(x,2);
-    var ys = Math.pow(y,2);
-    var zs = Math.pow(z,2);
+    var xs = Math.pow(x, 2);
+    var ys = Math.pow(y, 2);
+    var zs = Math.pow(z, 2);
     if (x + y > z && x + z > y && y + z > x) {
-        if( x==y && x==z){
-        calculatorResult.value = "trikampis yra lygiakraštis ";
+        if (x == y && x == z) {
+            calculatorResult.value = "trikampis yra lygiakraštis ";
         }
-        else if(x==z || x==y || z==y){
-            calculatorResult.value =" trikampis yra lygiašonis";
+        else if (x == z || x == y || z == y) {
+            calculatorResult.value = " trikampis yra lygiašonis";
         }
-        else{
-            calculatorResult.value="trikampis yra įvairiakraštis";
+        else {
+            calculatorResult.value = "trikampis yra įvairiakraštis";
         }
-        if(xs+ys>zs && xs+zs>ys && ys+zs>xs){
-            calculatorResult.value +="  ir trikampis yra smailusis";
+        if (xs + ys > zs && xs + zs > ys && ys + zs > xs) {
+            calculatorResult.value += "  ir trikampis yra smailusis";
         }
-        else if(xs+ys<zs || xs+zs<ys || ys+zs<xs){
-            calculatorResult.value +="  ir trikampis yra bukas";
+        else if (xs + ys < zs || xs + zs < ys || ys + zs < xs) {
+            calculatorResult.value += "  ir trikampis yra bukas";
         }
-        else if(xs+ys==zs || xs+zs==ys || ys+zs==xs){
-            calculatorResult.value +="  ir trikampis yra status";
+        else if (xs + ys == zs || xs + zs == ys || ys + zs == xs) {
+            calculatorResult.value += "  ir trikampis yra status";
             console.log("status");
         }
 
@@ -156,11 +156,50 @@ document.querySelector("#trikampis").addEventListener("click", function () {
 console.log();
 
 // Javascript "Ciklai"
-var numbers = [ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-var lyginiaiSk=[];
-var neLyginiaiSk=[];
-for(var i=0; i<numbers.length;i++){
-    if(numbers[i]%2==0){
-        
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+var lyginiaiSk = [];
+var neLyginiaiSk = [];
+var division5 = [];
+var division3 = [];
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 0) {
+        lyginiaiSk.push(numbers[i]);
+    }
+    else {
+        neLyginiaiSk.push(numbers[i]);
     }
 }
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 5 == 0) {
+        division5.push(numbers[i]);
+    }
+}
+for (var i = 0; i < lyginiaiSk.length; i++) {
+    if (lyginiaiSk[i] % 3 == 0) {
+        division3.push(lyginiaiSk[i]);
+    }
+}
+console.log("visi skaiciai: " + numbers);
+console.log("lyginiai skaiciai yra: " + lyginiaiSk);
+console.log("ne lyginiai skaiciai yra: " + neLyginiaiSk);
+console.log("skaiciai kurie dalinasi is 5: " + division5);
+console.log("lyginiai skaiciai kurie dalinasi is 3: " + division3);
+
+// Martynas labai mėgsta saldainius. Mamos slėptuvėje jis rado m saldainių. 
+// Pirmą dieną jis suvalgė 1 saldainį, antrąją – 2, trečiąją – 3. 
+// Kiekvieną kitą dieną jis suvalgydavo vienu saldainiu daugiau negu prieš tai buvusią dieną. 
+// Per kelias dienas d Martynas suvalgys visus saldainius? 
+// Paskutinei dienai gali likti mažiau saldainių. 
+// Pasitikrinkite. Kai m = 11, turėtumėte gauti d = 5.
+
+var m,d;
+m=11;
+d=0;
+var n=1;
+var saldainiuSyvalgyta=0;
+while(saldainiuSyvalgyta<=m){
+    saldainiuSyvalgyta= saldainiuSyvalgyta + n;
+    d++;
+    n++;
+}
+console.log(d);
