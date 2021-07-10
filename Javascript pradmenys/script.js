@@ -191,11 +191,11 @@ console.log("lyginiai skaiciai kurie dalinasi is 3: " + division3);
 // Pasitikrinkite. Kai m = 11, turėtumėte gauti d = 5.
 
 var m,d;
-m=15;
+m=11;
 d=0;
 var n=1;
 var saldainiuSyvalgyta=0;
-while(saldainiuSyvalgyta<=m){
+while(saldainiuSyvalgyta<m){
     saldainiuSyvalgyta= saldainiuSyvalgyta + n;
     d++;
     n++;
@@ -237,9 +237,15 @@ var taisyklingojiTrupmenosVardiklis = document.querySelector("#taisyklingoji-tru
 var taisyklingojiTrupmenosSveikasis = document.querySelector("#taisyklingoji-trupmenos-sveikasis");
 document.querySelector("#trupmenos-suma").addEventListener("click", function(){
     trupmena1.push(parseInt(document.querySelector("#sveikasisa").value));
+    if(isNaN(trupmena1[0])){
+        trupmena1[0]=0;
+    }
     trupmena1.push(parseInt(document.querySelector("#skaitiklisa").value));
     trupmena1.push(parseInt(document.querySelector("#vardiklisa").value));
     trupmena2.push(parseInt(document.querySelector("#sveikasisb").value));
+    if(isNaN(trupmena2[0])){
+        trupmena2[0]=0;
+    }
     trupmena2.push(parseInt(document.querySelector("#skaitiklisb").value));
     trupmena2.push(parseInt(document.querySelector("#vardiklisb").value));
     tvs1 = netaisyklingojiTrupmena(trupmena1);
@@ -251,8 +257,6 @@ document.querySelector("#trupmenos-suma").addEventListener("click", function(){
     taisyklingojiTrupmenosSveikasis.value=suma[0];
     taisyklingojiTrupmenosSkaitiklis.value=suma[1];
     taisyklingojiTrupmenosVardiklis.value=suma[2];
-    console.log(suma);
-
 });
 
 function netaisyklingojiTrupmena(trupmena) {
@@ -280,17 +284,26 @@ function trupmenuSuma(){
     return suma;
 }
 function trupmenuRezultatas(){
-    trupmenuSuma();
     suma[0] = parseInt(suma[1]/suma[2]);
     suma[1] = suma[1]%suma[2];
+    console.log(suma);
     if(suma[1] == 0){
-        suma[2]== 0;
+        suma[2]=0;
     }
+    var gcd = didžiausiasBendrasDaliklis();
+    suma[1]/=gcd;
+    suma[2]/=gcd;
     return suma;
 }
-
-
-
+function didžiausiasBendrasDaliklis(){
+    let gcd;
+    for (let i = 1; i <= suma[1] && i <= suma[2]; i++) {
+        if( suma[1] % i == 0 && suma[2] % i == 0) {
+           gcd = i;
+        }
+    }
+    return gcd;
+}
 
 
 
