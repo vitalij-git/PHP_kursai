@@ -287,15 +287,18 @@ function trupmenuRezultatas(){
     suma[0] = parseInt(suma[1]/suma[2]);
     suma[1] = suma[1]%suma[2];
     console.log(suma);
-    if(suma[1] == 0){
-        suma[2]=0;
-    }
-    var gcd = didžiausiasBendrasDaliklis();
+    console.log(suma);
+    var gcd = didziausiasBendrasDaliklis();
     suma[1]/=gcd;
     suma[2]/=gcd;
+    if(isNaN(suma[1]) &&isNaN(suma[2])){
+        document.querySelector('#taisyklingoji-trupmenos-skaitiklis').style.visibility = 'hidden';
+        document.querySelector('#taisyklingoji-trupmenos-vardiklis').style.visibility = 'hidden';
+    }
+
     return suma;
 }
-function didžiausiasBendrasDaliklis(){
+function didziausiasBendrasDaliklis(){
     let gcd;
     for (let i = 1; i <= suma[1] && i <= suma[2]; i++) {
         if( suma[1] % i == 0 && suma[2] % i == 0) {
