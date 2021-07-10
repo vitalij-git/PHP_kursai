@@ -11,6 +11,7 @@
        }
        input{
            margin:10px;
+           text-align: center;
        }
    </style>
 </head>
@@ -35,6 +36,55 @@
             <input type="text" name="masyvas" id="masyvas">
             <button class="masyvo-mygtukas">prideti</button>
             <input type="text" disabled="true" id="masyvo-rezultatas" name="masyvo-rezultatas">
+    </div>
+    <div class="trupmena">
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <input type="text" name="sveikasisa" id="sveikasisa">
+                    </td>
+                    <td>
+                        <input type="text" name="skaitiklisa"  id="skaitiklisa">
+                    </td>
+                    <td rowspan="2">+</td>
+                    <td rowspan="2">
+                        <input type="text" name="sveikasisb" id="sveikasisb">
+                    </td>
+                    <td>
+                        <input type="text" name="skaitiklisb"  id="skaitiklisb">
+                    </td>
+                    <td rowspan="2">=</td>
+                    <td>
+                        <input type="text" name="netaisyklingoji-trupmenos-skaitiklis" id="netaisyklingoji-trupmenos-skaitiklis" >
+                    </td>
+                    <td rowspan="2">=</td>
+                    <td rowspan="2">
+                        <input type="text" name="taisyklingoji-trupmenos-sveikasis" id="taisyklingoji-trupmenos-sveikasis">
+                    </td>
+                    <td>
+                        <input type="text"  name="taisyklingoji-trupmenos-skaitiklis" id="taisyklingoji-trupmenos-skaitiklis">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="vardiklisa"  id="vardiklisa">
+                    </td>
+                    <td>
+                        <input type="text" name="vardiklisb"  id="vardiklisb">
+                    </td>
+                    <td>
+                        <input type="text" name="netaisyklingoji-trupmenos-vardiklis" id="netaisyklingoji-trupmenos-vardiklis">
+                    </td>
+                    <td>
+                        <input type="text" name="taisyklingoji-trupmenos-vardiklis" id="taisyklingoji-trupmenos-vardiklis">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button id="trupmenos-suma">Suma</button>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

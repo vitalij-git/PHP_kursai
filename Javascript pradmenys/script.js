@@ -142,7 +142,6 @@ document.querySelector("#trikampis").addEventListener("click", function () {
         }
         else if (xs + ys == zs || xs + zs == ys || ys + zs == xs) {
             calculatorResult.value += "  ir trikampis yra status";
-            console.log("status");
         }
 
     }
@@ -223,4 +222,75 @@ while(nsk !=0 ){
     nsk = parseInt(nsk / 10);
 }
 console.log(nskMasyvas);
+
+//5. Sukurkite skaičiuotuvą, sudedantį dvi trupmenas. 
+//Rezultatas atvaizduojamas su sveikąja ir trupmenine dalimi.
+var trupmena1 = [];
+var trupmena2 = [];
+var suma = [0,0,0];
+var tvs1 = [];
+var tvs2 = [];
+var netaisyklingojiTrupmenosSkaitiklis = document.querySelector("#netaisyklingoji-trupmenos-skaitiklis");
+var netaisyklingojiTrupmenosVardiklis = document.querySelector("#netaisyklingoji-trupmenos-vardiklis");
+var taisyklingojiTrupmenosSkaitiklis = document.querySelector("#taisyklingoji-trupmenos-skaitiklis");
+var taisyklingojiTrupmenosVardiklis = document.querySelector("#taisyklingoji-trupmenos-vardiklis");
+var taisyklingojiTrupmenosSveikasis = document.querySelector("#taisyklingoji-trupmenos-sveikasis");
+document.querySelector("#trupmenos-suma").addEventListener("click", function(){
+    trupmena1.push(parseInt(document.querySelector("#sveikasisa").value));
+    trupmena1.push(parseInt(document.querySelector("#skaitiklisa").value));
+    trupmena1.push(parseInt(document.querySelector("#vardiklisa").value));
+    trupmena2.push(parseInt(document.querySelector("#sveikasisb").value));
+    trupmena2.push(parseInt(document.querySelector("#skaitiklisb").value));
+    trupmena2.push(parseInt(document.querySelector("#vardiklisb").value));
+    tvs1 = netaisyklingojiTrupmena(trupmena1);
+    tvs2 = netaisyklingojiTrupmena(trupmena2);
+    trupmenuSuma();
+    netaisyklingojiTrupmenosSkaitiklis.value= suma[1];
+    netaisyklingojiTrupmenosVardiklis.value=suma[2];
+    trupmenuRezultatas();
+    taisyklingojiTrupmenosSveikasis.value=suma[0];
+    taisyklingojiTrupmenosSkaitiklis.value=suma[1];
+    taisyklingojiTrupmenosVardiklis.value=suma[2];
+    console.log(suma);
+
+});
+
+function netaisyklingojiTrupmena(trupmena) {
+    var tvs;
+    tvs = [trupmena[0] * trupmena[2] + trupmena[1], trupmena[2]];
+    return tvs;
+}
+
+
+function skaitikliuSuma(){
+    tvs1[0] = tvs1[0] * tvs2[1];
+    tvs2[0] = tvs2[0] * tvs1[1];
+    return tvs1,tvs2;
+}
+function vardiklis (){
+    tvs1[1] = tvs1[1] * tvs2[1];
+    tvs2[1] = tvs1[1];
+    return tvs1,tvs2;
+}
+function trupmenuSuma(){
+    skaitikliuSuma();
+    vardiklis();
+    suma[1] = tvs1[0] + tvs2[0];
+    suma[2] = tvs1[1];
+    return suma;
+}
+function trupmenuRezultatas(){
+    trupmenuSuma();
+    suma[0] = parseInt(suma[1]/suma[2]);
+    suma[1] = suma[1]%suma[2];
+    if(suma[1] == 0){
+        suma[2]== 0;
+    }
+    return suma;
+}
+
+
+
+
+
 
