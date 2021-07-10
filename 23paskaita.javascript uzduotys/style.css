@@ -1,0 +1,12 @@
+input,button{
+    margin: 20px;
+}
+.square-root{
+    display: none;
+}
+.naujas-elementas{
+    display:flex;
+}
+.element{
+    font-size: 20px;
+}
