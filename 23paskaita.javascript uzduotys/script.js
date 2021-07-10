@@ -39,15 +39,9 @@ console.log(Math.sqrt(9,3));
 
 document.querySelector(".elementas").addEventListener("click",function(){
     var div = document.createElement("div");
-    div.style.backgroundColor = "blue";
-    div.style.width ="6.25rem";
-    div.style.height ="6.25rem";
-    div.style.display ="flex";
     div.innerText="tekstas";
-    div.style.color="orange";
-    div.style.alignItems="center";
-    div.style.justifyContent="center";
     document.getElementsByClassName('naujas-elementas')[0].appendChild(div);
+    div.classList.add("klase");
     divArray.push(div);
 });
 console.log(divArray);

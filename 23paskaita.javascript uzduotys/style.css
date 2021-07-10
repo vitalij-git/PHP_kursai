@@ -10,3 +10,13 @@ input,button{
 .element{
     font-size: 20px;
 }
+.klase{
+    background-color:blue;
+    display: flex;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+    width: 6.25rem;
+    height: 6.25rem;
+
+}
