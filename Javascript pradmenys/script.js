@@ -291,11 +291,11 @@ function trupmenuRezultatas(){
     var gcd = didziausiasBendrasDaliklis();
     suma[1]/=gcd;
     suma[2]/=gcd;
-    if(isNaN(suma[1]) &&isNaN(suma[2])){
+    if(isNaN(suma[1]) && isNaN(suma[2])){
         document.querySelector('#taisyklingoji-trupmenos-skaitiklis').style.visibility = 'hidden';
         document.querySelector('#taisyklingoji-trupmenos-vardiklis').style.visibility = 'hidden';
     }
-    if(sum[0]==null){
+    if(sum[0]==0){
         console.log(suma);
         document.querySelector('#taisyklingoji-trupmenos-sveikasis').style.visibility = 'hidden';
     }
