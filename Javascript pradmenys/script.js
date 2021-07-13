@@ -295,7 +295,7 @@ function trupmenuRezultatas(){
         document.querySelector('#taisyklingoji-trupmenos-skaitiklis').style.visibility = 'hidden';
         document.querySelector('#taisyklingoji-trupmenos-vardiklis').style.visibility = 'hidden';
     }
-    if(sum[0]==0){
+    if(suma[0]==0){
         console.log(suma);
         document.querySelector('#taisyklingoji-trupmenos-sveikasis').style.visibility = 'hidden';
     }
